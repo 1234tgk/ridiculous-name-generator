@@ -8,13 +8,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class RandomNameGenerator {
-    final private Set<Character> CONFLICT_CHARACTER = new HashSet<>(Arrays.asList('b', 'd', 'k', 'q', 'v', 'w'));
+    final private Set<Character> CONFLICT_CHARACTER = new HashSet<>(Arrays.asList('b', 'c', 'q', 'v', 'w'));
 
     // empty constructor
 
     public String generateName() {
         StringBuilder builder = new StringBuilder();
-        Generex generex = new Generex("([a-z]|[bdfghjklmnpqrstvwxz][rlkh])?([aeiouy])([bdfghjklmnpqrstvwxz]|ng|ll)?");
+        Generex generex = new Generex("([a-z]|[bcdfghjklmnpqrstvwxz][rlkh]|[bcdfghjklmnpqrstvwxz]hr)?([aeiouy])([bdfghjklmnpqrstvwxz]|ng|ll)?");
 
         int i = 0;
         boolean randomFlag;
