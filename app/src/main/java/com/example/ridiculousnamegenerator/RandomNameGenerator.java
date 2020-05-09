@@ -21,7 +21,7 @@ public class RandomNameGenerator {
 
             double numberFlag = Math.floor(Math.random() * 2);
             randomFlag = numberFlag == 0;
-        } while (i < 3 && randomFlag);
+        } while (i < 3 && (randomFlag || builder.length() < 4));
 
         return builder.toString();
     }
