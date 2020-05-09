@@ -8,5 +8,5 @@ press the second button (how to speak) for the system to speak the random name t
 
 ## Resources used
 Created with Android Studio </br>
-Used mifmif's "generex" java library </br>
+Used mifmif's "generex" java library https://github.com/mifmif/Generex </br>
 photo is from https://www.npg.org.uk/collections/search/portrait/mw11574/William-Shakespeare edited by me </br>
