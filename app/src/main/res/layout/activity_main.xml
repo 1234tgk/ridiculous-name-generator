@@ -48,6 +48,7 @@
         android:id="@+id/tts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="speakName"
         android:text="How to speak"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
