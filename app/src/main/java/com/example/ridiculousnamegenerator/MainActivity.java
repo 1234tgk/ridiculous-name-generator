@@ -2,7 +2,10 @@ package com.example.ridiculousnamegenerator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.TextView;
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
     @Override
     public void onInit(int status) {
-        this.tts.setLanguage(Locale.US);
+        this.tts.setLanguage(Locale.UK);
     }
 
     public void speakName(View v) {

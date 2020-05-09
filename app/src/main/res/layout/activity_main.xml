@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/shakespeare"
+    >
 
     <TextView
         android:id="@+id/vanityMeme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Frailty, Thou Name is..."
-        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/nameView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,8 +28,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Your Name Here"
-        android:textSize="36sp"
+        android:text="Name Here"
+        android:textColor="#FF0000"
+        android:textSize="40sp"
+        app:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -34,11 +40,13 @@
 
     <Button
         android:id="@+id/randomizer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="46dp"
         android:layout_marginTop="32dp"
+        android:background="#19308A"
         android:onClick="displayName"
         android:text="Click for a random name"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,8 +54,9 @@
 
     <Button
         android:id="@+id/tts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:background="#1E5F20"
         android:onClick="speakName"
         android:text="How to speak"
         app:layout_constraintBottom_toBottomOf="parent"
